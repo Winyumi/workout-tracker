@@ -20,7 +20,7 @@ API.getWorkoutsInRange()
     "#d45087",
     "#f95d6a",
     "#ff7c43",
-    "ffa600",
+    "#ffa600",
     "#003f5c",
     "#2f4b7c",
     "#665191",
@@ -28,7 +28,7 @@ API.getWorkoutsInRange()
     "#d45087",
     "#f95d6a",
     "#ff7c43",
-    "ffa600"
+    "#ffa600"
   ]
 
   return arr;
@@ -151,7 +151,7 @@ function populateChart(data) {
       labels: workouts,
       datasets: [
         {
-          label: "Excercises Performed",
+          label: "Exercises Performed",
           backgroundColor: colors,
           data: durations
         }
@@ -160,7 +160,7 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Excercises Performed"
+        text: "Exercises Performed"
       }
     }
   });
@@ -171,7 +171,7 @@ function populateChart(data) {
       labels: workouts,
       datasets: [
         {
-          label: "Excercises Performed",
+          label: "Exercises Performed",
           backgroundColor: colors,
           data: pounds
         }
@@ -180,7 +180,7 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Excercises Performed"
+        text: "Exercises Performed"
       }
     }
   });
@@ -218,6 +218,6 @@ function workoutNames(data) {
       workouts.push(exercise.name);
     });
   });
-  
+
   return workouts;
 }
